@@ -1,0 +1,36 @@
+{
+  "name": "node_web_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd client && npm install && cd ../server && npm install",
+    "build-server": "cd server && webpack",
+    "build-client": "cd client && webpack",
+    "build": "npm run build-server && npm run build-client",
+    "build-prod": "cross-env NODE_ENV=production && npm run build-server && npm run build-client",
+    "dev-server": "cd server && webpack --watch --progress --colors",
+    "server": "cd dist && nodemon ./server.bundle.js",
+    "dev-client": "cd client && webpack --watch --progress --colors",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
