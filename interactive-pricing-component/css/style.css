@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/bg-pattern.svg);
+  background-size: 200rem 28rem;
+  background-repeat: no-repeat;
+}
+
+.price__container {
+  margin: 50px 0 0 0;
+}
+
+.circles {
+  position: relative;
+}
+
+.price__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+
+.text {
+  max-width: 100%;
+  width: 400px;
+  top: 13%;
+  margin: 0 auto;
+  position: absolute;
+}
+.text p {
+  color: #858fad;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 14.1px;
+}
+
+.price__title {
+  color: #293356;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  margin: 0 0 10px 0;
+}
+
+.price__card {
+  max-width: 100%;
+  width: 500px;
+  background: #fafbff;
+  margin: 80px auto;
+  border-radius: 8px;
+  box-shadow: 0px 10px 13px 3px rgba(34, 60, 80, 0.2);
+  padding: 0 15px 0 15px;
+}
+
+.price__card-content {
+  max-width: 100%;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 15px 0 15px;
+}
+
+.price__card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 0px 0;
+}
+
+.price__card-pageviews {
+  color: #858fad;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.price__card-pageviews .views {
+  margin: 0 3px 0 0;
+}
+
+.price__card-count {
+  color: #858fad;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+.price__card-count i {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  font-family: "Manrope", sans-serif;
+  color: #293356;
+}
+.price__card-count .price {
+  font-weight: 800;
+  font-size: 30px;
+  font-family: "Manrope", sans-serif;
+  color: #293356;
+  margin: 0 5px 0 0;
+}
+
+.amount-bar .price__amount {
+  margin: 30px 0 0 0;
+  outline: none;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #eaeefb;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a5f3eb), color-stop(100%, #a5f3eb));
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.5s ease;
+}
+.amount-bar .price__amount::-webkit-slider-runnable-track {
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+}
+.amount-bar .price__amount::-webkit-slider-thumb {
+  height: 35px;
+  width: 35px;
+  border: 0;
+  background-image: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #10d5c2;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 0px #10d5c2;
+  box-shadow: -1px 10px 30px -3px #10d5c2;
+  -webkit-appearance: none;
+}
+.amount-bar .price__amount::-webkit-slider-thumb:hover {
+  background-color: #159387;
+}
+
+@media only screen and (max-width: 410px) {
+  .price__title {
+    font-size: 21px;
+  }
+
+  .text {
+    top: 13%;
+  }
+  .text p {
+    width: 200px;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+
+  .price__card-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price__card-count {
+    margin: 80px 0 0 0;
+  }
+
+  .price__amount {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .tarif-change {
+    margin: 50px 0 0 0;
+  }
+
+  .discount-text {
+    display: none;
+  }
+
+  .price__card-pageviews {
+    font-size: 11px;
+  }
+
+  .trial-service {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trial-service .trial-adventages {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.tarif-change {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 36px 20px 30px 0;
+  width: 390px;
+}
+
+.month {
+  color: #858fad;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.switch__button {
+  margin: -15px 10px 0 10px;
+}
+.switch__button input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.switch__button label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 19px;
+  background: #cdd7ee;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.switch__button label:hover {
+  background-color: #a5f3eb;
+}
+.switch__button label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.switch__button input:checked + label {
+  background: #10d5c2;
+}
+.switch__button input:checked + label:after {
+  left: calc(100% - 4px);
+  transform: translateX(-100%);
+}
+.switch__button label:active:after {
+  width: 20px;
+}
+
+.year {
+  color: #858fad;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.discount {
+  background: #feece7;
+  padding: 2px;
+  color: #ff8c66;
+  font-weight: 600;
+  font-size: 11px;
+  margin-left: 5px;
+  margin-top: 4px;
+  border-radius: 30px;
+  padding: 2px 6px 2px 6px;
+}
+.discount .discoutn-text {
+  font-style: normal;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 0.1px;
+  background-color: #cdd7ee;
+  position: absolute;
+  left: 0;
+}
+
+.trial-service {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 20px 0;
+}
+
+.trial-adventages {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+}
+.trial-adventages span {
+  margin-top: 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #858fad;
+}
+.trial-adventages span img {
+  margin: 0 10px 0 0;
+}
+
+.start-trial__button {
+  background-color: #293356;
+  width: 135px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 10px 0 0 0;
+}
+.start-trial__button a {
+  color: #bdccff;
+  display: flex;
+  justify-content: center;
+  margin: 6px 0 0 0;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  transition: all 0.5s ease-in;
+}
+.start-trial__button a:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

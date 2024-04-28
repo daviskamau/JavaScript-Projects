@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  
+    <main class="price__container">
+      
+       <div class="price__content">
+        <img  class="circles" src="images/pattern-circles.svg" alt="circles">
+          <div class="text">
+            <h1 class="price__title"> Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+          </div>
+
+          <div class="price__card">
+            <div class="price__card-content">
+               <div class="price__card-title">
+                 <div class="price__card-pageviews"><span class="views"></span>Pageviews</div>  
+                 <div class="price__card-count"><i>$</i><span class="price"></span><span class="time">/ month</span></div>
+               </div>
+                
+                 <div class="amount-bar">
+               <input class="price__amount" type="range" value="2" min="0" max="4" step="1" aria-valuetext="0"  id="myRange">
+               </div>
+
+
+               <div class="tarif-change">
+                  <span class="month">Monthly Billing</span>
+                  <div class="switch__button">
+                    <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                  </div>
+                  <span class="year">Yearly Billing</span>
+                  <span class="discount">25% <span class="discount-text"> discount</span></span>
+               </div>
+
+               <div class="horizontal-line"></div>   
+
+               <div class="trial-service">
+                 <div class="trial-adventages">
+                   <span><img src="images/icon-check.svg" alt="check">Unlimited websites</span>
+                   <span><img src="images/icon-check.svg" alt="check">100% data ownership</span>
+                   <span><img src="images/icon-check.svg" alt="check">Email reports</span>
+                 </div>
+                 <div class="start-trial__button">
+                   <a href="#">Start my trial</a>
+                 </div>
+               </div>
+               </div>
+          </div>
+       </div>
+
+       
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
