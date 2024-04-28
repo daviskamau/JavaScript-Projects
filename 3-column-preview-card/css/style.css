@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  margin: 165px 0 0 0;
+  display: grid;
+  place-items: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  justify-content: center;
+  max-width: 880px;
+}
+
+.cars {
+  padding: 45px;
+}
+
+.cars:first-child {
+  background-color: #e38826;
+  border-radius: 10px 0 0 10px;
+}
+.cars:first-child .button a {
+  color: #e38826;
+}
+.cars:first-child .button:hover {
+  background-color: #e38826;
+}
+.cars:first-child .button:hover a {
+  color: #f2f2f2;
+}
+
+.cars:nth-child(2) {
+  background-color: #006970;
+}
+.cars:nth-child(2) .button a {
+  color: #006970;
+}
+.cars:nth-child(2) .button:hover {
+  background-color: #006970;
+}
+.cars:nth-child(2) .button:hover a {
+  color: #f2f2f2;
+}
+
+.cars:nth-child(3) {
+  background-color: #004241;
+  border-radius: 0 10px 10px 0;
+}
+.cars:nth-child(3) .button a {
+  color: #004241;
+}
+.cars:nth-child(3) .button:hover {
+  background-color: #004241;
+}
+.cars:nth-child(3) .button:hover a {
+  color: #f2f2f2;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 600;
+  margin: 25px 0 0 0;
+}
+
+.subtitle {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  word-spacing: 2px;
+  margin: 30px 0 0 0;
+  line-height: 25px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin: 100px 0 0 0;
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid #f2f2f2;
+}
+.button a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12.5px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media only screen and (max-width: 840px) {
+  main {
+    margin: 50px 0 50px 0;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(1, 88%);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .cars:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .cars:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
